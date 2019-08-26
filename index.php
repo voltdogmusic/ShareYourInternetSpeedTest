@@ -12,7 +12,10 @@ $app->get('/', function () use ($app) {
     return $app->sendFile(__DIR__.'/views/index.html');
 });
 
-
+// Register the monolog logging service
+$app->register(new Silex\Provider\MonologServiceProvider(), array(
+    'monolog.logfile' => 'php://stderr',
+));
 
 $app->get('/cowsay', function() use($app) {
     $app['monolog']->addDebug('cowsay');

@@ -21,6 +21,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php" />
       <path value="$PROJECT_DIR$/vendor/alrik11es/cowsayphp" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7" />

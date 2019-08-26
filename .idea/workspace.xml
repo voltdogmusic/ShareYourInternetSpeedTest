@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f1c44bd-422b-4e04-a0b6-ad0290ee0895" name="Default" comment="" />
+    <list default="true" id="5f1c44bd-422b-4e04-a0b6-ad0290ee0895" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/BradRestApi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BradRestApi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +39,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="400">
+              <caret line="19" selection-start-line="19" selection-end-line="22" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -64,8 +71,8 @@
       <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="104">
+              <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -111,8 +118,8 @@
         <option value="$PROJECT_DIR$/api/post/create.php" />
         <option value="$PROJECT_DIR$/api/post/read.php" />
         <option value="$PROJECT_DIR$/views/index.html" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -145,13 +152,15 @@
       <path value="$PROJECT_DIR$/vendor/symfony/routing" />
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php" />
+      <path value="$PROJECT_DIR$/vendor/alrik11es/cowsayphp" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-3852" />
+    <option name="y" value="-550" />
+    <option name="width" value="3866" />
+    <option name="height" value="2106" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -274,15 +283,16 @@
       <updated>1566586678662</updated>
       <workItem from="1566586680014" duration="11034000" />
       <workItem from="1566839519964" duration="1968000" />
-      <workItem from="1566843943293" duration="6037000" />
+      <workItem from="1566843943293" duration="6891000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19039000" />
+    <option name="totallyTimeSpent" value="19893000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-3846" y="-544" width="1933" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="TODO" order="12" show_stripe_button="false" weight="0.32817504" />
@@ -294,12 +304,12 @@
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="right" x="2396" y="36" width="739" height="487" id="Version Control" order="10" type="WINDOWED" weight="0.32853332" />
       <window_info anchor="right" x="-3840" y="-538" width="2886" height="1054" id="Run" order="2" sideWeight="0.58093125" weight="0.8294243" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.4994664" visible="true" weight="0.32705098" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.4994664" visible="true" weight="0.13636364" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" x="-2403" y="-445" width="393" height="995" id="Project" order="4" sideWeight="0.71499175" visible="true" weight="0.17110874" />
+      <window_info content_ui="combo" x="-2403" y="-445" width="393" height="995" id="Project" order="4" sideWeight="0.7150192" visible="true" weight="0.1712" />
       <window_info anchor="right" id="Database" order="3" show_stripe_button="false" />
-      <window_info id="Structure" order="5" sideWeight="0.28500825" side_tool="true" visible="true" weight="0.17110874" />
+      <window_info id="Structure" order="5" sideWeight="0.28498074" side_tool="true" visible="true" weight="0.1712" />
       <window_info anchor="right" id="Ant Build" order="7" show_stripe_button="false" weight="0.2497332" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
@@ -507,15 +517,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        <state relative-caret-position="104">
+          <caret line="4" column="7" lean-forward="true" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="400">
+          <caret line="19" selection-start-line="19" selection-end-line="22" selection-end-column="3" />
         </state>
       </provider>
     </entry>
