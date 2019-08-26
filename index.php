@@ -13,6 +13,13 @@ $app->get('/', function () use ($app) {
 });
 
 
+
+$app->get('/cowsay', function() use($app) {
+    $app['monolog']->addDebug('cowsay');
+    return "<pre>".\Cowsayphp\Cow::say("Cool beans")."</pre>";
+});
+
+
 $app->get('/readAll', function () use ($app) {
 
     //return 'Hello';

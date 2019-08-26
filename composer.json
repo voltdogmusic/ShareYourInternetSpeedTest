@@ -1,7 +1,8 @@
 {
     "require": {
         "php": "~7",
-        "silex/silex": "^2.0.4"
+        "silex/silex": "^2.0.4",
+        "alrik11es/cowsayphp": "^1.2"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*"
