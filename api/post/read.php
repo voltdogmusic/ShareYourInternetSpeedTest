@@ -98,9 +98,6 @@ if ($num > 0) {
             echo "$color, $size, $shape, $wddx_size\n";
 
     //echo output blue , large, sphere, medium
-
-
-
  */
 
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick=read()>Read All</button>
+
+
+<script>
+
+    async function read(){
+
+
+        const config = {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            }
+        };
+
+        const response = await fetch(`http://localhost/BradRestApi/api/post/read.php`, config);
+        const json = await response.json();
+
+        console.log(json.data[0].id);
+
+    }
+
+</script>
+</body>
+</html>

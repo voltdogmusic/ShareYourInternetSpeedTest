@@ -1,5 +1,6 @@
 {
     "require": {
-        "php": "~7"
+        "php": "~7",
+        "silex/silex": "^2.0.4"
     }
 }
