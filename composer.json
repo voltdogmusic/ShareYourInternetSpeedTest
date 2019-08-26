@@ -2,5 +2,8 @@
     "require": {
         "php": "~7",
         "silex/silex": "^2.0.4"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
     }
 }
