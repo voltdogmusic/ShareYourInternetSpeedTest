@@ -14,7 +14,10 @@ $app->get('/', function () use ($app) {
 
 
 $app->get('/readAll', function () use ($app) {
-    return $app->sendFile(__DIR__.'/api/post/read.php');
+
+    return 'Hello';
+
+    //return $app->sendFile(__DIR__.'/api/post/read');
 });
 
 $app->run();
