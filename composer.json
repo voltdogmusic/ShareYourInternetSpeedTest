@@ -4,7 +4,8 @@
         "silex/silex": "^2.0.4",
         "alrik11es/cowsayphp": "^1.2",
         "monolog/monolog": "^1.22",
-        "symfony/apache-pack": "^1.0"
+        "symfony/apache-pack": "^1.0",
+        "ext-mysqli":"*"
     },
     "require-dev": {
         "heroku/heroku-buildpack-php": "*"
