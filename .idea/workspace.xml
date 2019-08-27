@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5f1c44bd-422b-4e04-a0b6-ad0290ee0895" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/config/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/myview.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/myview.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="494">
@@ -46,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Database.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-104">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <state relative-caret-position="156">
+              <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -77,9 +75,9 @@
       <list>
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/config/Database.php" />
         <option value="$PROJECT_DIR$/views/myview.html" />
         <option value="$PROJECT_DIR$/views/index.html" />
+        <option value="$PROJECT_DIR$/config/Database.php" />
       </list>
     </option>
   </component>
@@ -245,12 +243,12 @@
       <workItem from="1566855366023" duration="1818000" />
       <workItem from="1566861297202" duration="3312000" />
       <workItem from="1566867142653" duration="553000" />
-      <workItem from="1566867721276" duration="2658000" />
+      <workItem from="1566867721276" duration="2961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6655000" />
+    <option name="totallyTimeSpent" value="6958000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -596,10 +594,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/Database.php">
+    <entry file="file://$PROJECT_DIR$/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-104">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state relative-caret-position="494">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
@@ -617,10 +615,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.html">
+    <entry file="file://$PROJECT_DIR$/config/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="156">
+          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
         </state>
       </provider>
     </entry>
