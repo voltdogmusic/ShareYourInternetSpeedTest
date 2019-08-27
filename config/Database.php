@@ -3,7 +3,7 @@
 class Database
 {
     // DB Params
-    private $host = 'localhost';
+    private $host = 'https://hidden-brushlands-71469.herokuapp.com';
     private $db_name = 'myblog';
     private $username = 'root';
     private $password = 'password';
