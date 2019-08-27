@@ -2,6 +2,8 @@
 
 class Database
 {
+
+    /* This is brads code for a local sql database
     // DB Params
     private $host = '127.0.0.1';
     private $db_name = 'myblog';
@@ -25,7 +27,37 @@ class Database
         }
         return $this->conn;
     }
+    */
+
+
+    // My code for clearDB database
+    public function connect()
+    {
+
+        $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+        $server = $url["host"];
+        $username = $url["user"];
+        $password = $url["pass"];
+        $db = substr($url["path"], 1);
+
+        $conn = new mysqli($server, $username, $password, $db);
+
+
+        $this->conn = null;
+        try {
+            $this->conn = new PDO('mysql:host=' . $server . ';dbname=' . $db, username, $password);
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            echo 'Connection Error: ' . $e->getMessage();
+        }
+        return $this->conn;
+    }
 }
+
+
+$db = new Database();
+$db->connect();
 
 
 
