@@ -4,6 +4,7 @@ class Database
 {
 
     //This is brads code for a local sql database
+    // I guess for security reasons I can remove this and use the bottom method to ensure my database username and password are not exposed
     // DB Params
     private $host = 'us-cdbr-iron-east-02.cleardb.net';
     private $db_name = 'heroku_74da0c35df50742';

@@ -6,6 +6,7 @@
 </head>
 <body>
 <button onclick=readAll()>Read All</button>
+<button onclick=getAllUsers()>getAllUsers</button>
 
 
 <script>
@@ -13,7 +14,7 @@
     const localUrl = 'http://localhost/BradRestApi/api/post/';
     const herokuUrl = 'https://hidden-brushlands-71469.herokuapp.com/api/post/';
 
-    async function readAll(){
+    async function readAll() {
         const config = {
             method: 'GET',
             headers: {
@@ -22,15 +23,31 @@
             }
         };
 
+        // Either of these would work, but only the second one would work for outside users
         //const response = await fetch('api/post/read.php', config);
-
         const response = await fetch(`${herokuUrl}read.php`, config);
 
         const json = await response.json();
 
-        json.data.forEach((i)=>{console.log(i)})
+        json.data.forEach((i) => {
+            console.log(i)
+        })
     }
 
+
+    async function getAllUsers() {
+
+        const config = {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            }
+        };
+
+        const response = await fetch(`${localUrl}getallusers.php`, config);
+        const json = await response.json();
+    }
 
 
 </script>
