@@ -3,11 +3,20 @@
 class Database
 {
     // DB Params
-    private $host = '127.0.0.1';
-    private $db_name = 'myblog';
-    private $username = 'root';
-    private $password = 'password';
+//    private $host = '127.0.0.1';
+//    private $db_name = 'myblog';
+//    private $username = 'root';
+//    private $password = 'password';
+//    private $conn;
+
+
+    private $host = '@us-cdbr-iron-east-02.clear                                      db.net';
+    private $db_name = 'heroku_74da0c35df50742';
+    private $username = 'b80d61794837eb';
+    private $password = '9af4c84a';
     private $conn;
+
+
 
     // DB Connect
     // https://www.php.net/manual/en/pdo.construct.php
