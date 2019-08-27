@@ -20,27 +20,20 @@ $app->get('/', function () use ($app) {
     return $app->sendFile(__DIR__.'/views/index.html');
 });
 
-
+// This servers up a cow, I should delete this later as well as uninstall the package that it came with
 $app->get('/cowsay', function() use($app) {
     $app['monolog']->addDebug('cowsay');
     return "<pre>".\Cowsayphp\Cow::say("Cool beans")."</pre>";
 });
 
-
+// Delete this later
 $app->get('/myview', function () use ($app) {
     return $app->sendFile(__DIR__.'/views/myview.html');
 });
 
-
+// This servers up the actual code, I don't want that
 $app->get('/readall', function () use ($app) {
     return $app->sendFile(__DIR__.'/api/post/read.php');
-});
-
-
-
-
-$app->get('/read', function () use ($app) {
-    return 'read';
 });
 
 $app->run();

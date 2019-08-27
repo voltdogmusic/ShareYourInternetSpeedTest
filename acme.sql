@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 27, 2019 at 04:08 AM
+-- Generation Time: Aug 27, 2019 at 06:49 AM
 -- Server version: 8.0.15
 -- PHP Version: 7.3.8
 
@@ -28,6 +28,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `comments`
 --
 
+DROP TABLE IF EXISTS `comments`;
 CREATE TABLE `comments` (
   `id` int(11) NOT NULL,
   `post_id` int(11) DEFAULT NULL,
@@ -57,6 +58,7 @@ INSERT INTO `comments` (`id`, `post_id`, `user_id`, `body`) VALUES
 -- Table structure for table `posts`
 --
 
+DROP TABLE IF EXISTS `posts`;
 CREATE TABLE `posts` (
   `id` int(11) NOT NULL,
   `user_id` int(11) DEFAULT NULL,
@@ -87,6 +89,7 @@ INSERT INTO `posts` (`id`, `user_id`, `title`, `body`) VALUES
 -- Table structure for table `users`
 --
 
+DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `first_name` varchar(100) DEFAULT NULL,
