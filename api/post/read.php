@@ -2,7 +2,6 @@
 
 // http://localhost/BradRestApi/api/post/read.php
 
-
 // Headers
 // allows access from anyone
 header('Access-Control-Allow-Origin: *');

@@ -24,7 +24,7 @@
             }
         };
 
-        const response = await fetch(`${herokuUrl}read.php`, config);
+        const response = await fetch('api/post/read.php', config);
         const json = await response.json();
 
         console.log(json.data[0]);
