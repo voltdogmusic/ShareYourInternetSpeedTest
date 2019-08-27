@@ -20,7 +20,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/routing" />
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/heroku/heroku-buildpack-php" />
-      <path value="$PROJECT_DIR$/vendor/alrik11es/cowsayphp" />
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
     </include_path>

@@ -5,17 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-<button onclick=read()>Read All</button>
+<button onclick=readAll()>Read All</button>
 
 
 <script>
 
-
     const localUrl = 'http://localhost/BradRestApi/api/post/';
     const herokuUrl = 'https://hidden-brushlands-71469.herokuapp.com/api/post/';
 
-    async function read(){
-
+    async function readAll(){
         const config = {
             method: 'GET',
             headers: {
@@ -24,12 +22,16 @@
             }
         };
 
-        const response = await fetch('api/post/read.php', config);
+        //const response = await fetch('api/post/read.php', config);
+
+        const response = await fetch(`${herokuUrl}read.php`, config);
+
         const json = await response.json();
 
-        console.log(json.data[0]);
-
+        json.data.forEach((i)=>{console.log(i)})
     }
+
+
 
 </script>
 </body>
