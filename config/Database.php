@@ -30,6 +30,7 @@ class Database
     */
 
 
+    private $conn;
     // My code for clearDB database
     public function connect()
     {
@@ -41,12 +42,12 @@ class Database
         $password = $url["pass"];
         $db = substr($url["path"], 1);
 
-        $conn = new mysqli($server, $username, $password, $db);
+        //$conn = new mysqli($server, $username, $password, $db);
 
 
         $this->conn = null;
         try {
-            $this->conn = new PDO('mysql:host=' . $server . ';dbname=' . $db, username, $password);
+            $this->conn = new PDO('mysql:host=' . $server . ';dbname=' . $db, $username, $password);
             $this->conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
             echo 'Connection Error: ' . $e->getMessage();
