@@ -1,46 +1,38 @@
 <?php
 
-// MY FILE, DOESN'T WORK, TRYING TO ACCESS ALL USERS FROM DATABASE
+class User{
+
+}
 
 
-header('Access-Control-Allow-Origin: *');
-header('Content-Type: application/json');
+$servername = "us-cdbr-iron-east-02.cleardb.net";
+$username = "b80d61794837eb";
+$password = "9af4c84a";
+$dbname = "heroku_74da0c35df50742";
 
-include_once '../../config/Database.php';
-include_once '../../models/User.php';
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+//$sql = "SELECT id,email,password FROM users";
+$sql = "SELECT * FROM users";
+
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
 
 
-$database = new Database();
-$db = $database->connect();
-
-
-$user = new User($db);
-$result = $user->read();
-$num = $result->rowCount();
-
-if ($num > 0) {
-
-    $user_arr = array();
-    $user_arr['data'] = array();
-
-    while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-        extract($row);
-
-        $user_item = array(
-            'id' => $id,
-            'email' => $email,
-            'password' => $password
-        );
-
-        array_push($user_arr['data'], $user_item);
+    while ($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Name: " . $row["email"]. " " . $row["password"]. "<br>";
     }
 
-    // Turn to JSON & output
-    echo json_encode($user_arr);
+
 
 } else {
-    // No Posts
-    echo json_encode(
-        array('message' => 'No Users Found')
-    );
+    echo "0 results";
 }
+$conn->close();
+
