@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
 <style>
     * {
         margin: 0;
@@ -25,9 +29,10 @@
 
 </style>
 
-<h1 style="text-align:center;" >Post your speed test</h1>
+<h1 style="text-align:center;" >Share your speed test</h1>
+<h3 style="text-align:center;" >Click the play button and enter your results to share your speed test</h3>
 
-<!--OST Widget code start-->
+<!--https://openspeedtest.com/speed-testing-application-for-your-website.php-->
 <div style="text-align:center;">
     <div style="min-height:360px;">
         <div style="width:100%;
@@ -47,9 +52,6 @@
     </div>
 
 <body>
-
-<button onclick=readAllFromPostsTable()>Read All From Posts Table</button>
-<button onclick=getAllUsers()>Get all Users from Users Table</button>
 
 
 <form action="http://localhost/BradRestApi/api/myPostCrud/getAllPosts.php"
@@ -76,44 +78,6 @@
 <script>
     const localUrl = 'http://localhost/BradRestApi/api/';
     const herokuUrl = 'https://hidden-brushlands-71469.herokuapp.com/api/post/';
-
-    // Delete/modify this function later, this is grabbing brad's data from the posts table
-    async function readAllFromPostsTable() {
-        const config = {
-            method: 'GET',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            }
-        };
-
-        const response = await fetch(`${localUrl}post/read.php`, config);
-        const json = await response.json();
-
-        json.data.forEach((i) => {
-            console.log(i)
-        })
-    }
-
-    // This function grabs the data from the users table
-    async function getAllUsers() {
-
-        const config = {
-            method: 'GET',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            }
-        };
-
-        const response = await fetch(`${localUrl}myUsers/getallusers.php`, config);
-        const json = await response.json();
-
-        json.data.forEach((i) => {
-            console.log(i)
-        })
-    }
-
 
 
 
