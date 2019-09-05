@@ -13,9 +13,8 @@ $app->register(new Silex\Provider\MonologServiceProvider(), array(
     'monolog.logfile' => 'php://stderr',
 ));
 
-
 // http://localhost/BradRestApi/index.php will redirect the vanilla path to views/index.html
- https://hidden-brushlands-71469.herokuapp.com also uses this to redirect to index.html
+ // https://hidden-brushlands-71469.herokuapp.com also uses this to redirect to index.html
 $app->get('/', function () use ($app) {
     return $app->sendFile(__DIR__.'/views/index.html');
 });

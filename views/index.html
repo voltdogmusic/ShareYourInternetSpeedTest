@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #textForm {
+
+    }
+
+    #textarea{
+
+    }
+
+    textarea{
+        font-size: 24px;
+    }
+
+</style>
+
+<h1 style="text-align:center;" >Post your speed test</h1>
+
+<!--OST Widget code start-->
+<div style="text-align:center;">
+    <div style="min-height:360px;">
+        <div style="width:100%;
+                    height:0;
+                    padding-bottom:0%;
+                    position:relative;">
+            <iframe style="border:none;
+                           position:absolute;
+                           top:0;left:0;
+                           width:100%;
+                           height:100%;
+                           min-height:360px;
+                           border:none;
+                           overflow:hidden !important;"
+                    src="//openspeedtest.com/Get-widget.php"></iframe>
+        </div>
+    </div>
+
 <body>
+
 <button onclick=readAllFromPostsTable()>Read All From Posts Table</button>
 <button onclick=getAllUsers()>Get all Users from Users Table</button>
+
+
+<form action="http://localhost/BradRestApi/api/myPostCrud/getAllPosts.php"
+      method="post"
+      id="textForm">
+    <textarea rows="6"
+              cols="40"
+              name="textarea"
+              id="textarea"
+              autofocus
+
+    >
+    </textarea>
+    <br>
+    <input
+            type="submit"
+            value="Submit">
+</form>
+
+
+
+
 
 <script>
     const localUrl = 'http://localhost/BradRestApi/api/';
@@ -48,6 +113,8 @@
             console.log(i)
         })
     }
+
+
 
 
 </script>
