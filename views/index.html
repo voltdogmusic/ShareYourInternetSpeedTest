@@ -2,35 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Share Your Internet Speed</title>
 </head>
+<!--Bootstrap-->
 <link rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous">
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+      crossorigin="anonymous"/>
+<body>
 
-    #textForm {
-
-    }
-
-    #textarea{
-
-    }
-
-    textarea{
-        font-size: 24px;
-    }
-
-</style>
-
-<h1 style="text-align:center;" >Share your speed test</h1>
-<h3 style="text-align:center;" >Click the play button and enter your results to share your speed test</h3>
+<h2 style="text-align:center;">Share and Compare your Internet Speed Test</h2>
+<h4 style="text-align:center;">Click the play button and enter your results to share your internet speed test</h4>
 
 <!--https://openspeedtest.com/speed-testing-application-for-your-website.php-->
 <div style="text-align:center;">
@@ -50,21 +33,22 @@
                     src="//openspeedtest.com/Get-widget.php"></iframe>
         </div>
     </div>
+</div>
 
-<body>
-
-
-<form action="http://localhost/BradRestApi/api/myPostCrud/getAllPosts.php"
+<form action="http://localhost/BradRestApi/api/speedTest/postspeedtestform.php"
       method="post"
       id="textForm">
-    <textarea rows="6"
-              cols="40"
-              name="textarea"
-              id="textarea"
-              autofocus
-
-    >
-    </textarea>
+    Download <input type="text" name="download" required>
+    <br>
+    Upload <input type="text" name="upload" required>
+    <br>
+    Ping <input type="text" name="ping">
+    <br>
+    Jitter <input type="text" name="jitter">
+    <br>
+    Location <input type="text" name="location" required>
+    <br>
+    Carrier <input type="text" name="carrier" required>
     <br>
     <input
             type="submit"
@@ -72,15 +56,51 @@
 </form>
 
 
+<button onclick="generatetable()">table</button>
+<h1 id="resultsTable">Results table here</h1>
 
 
+</body>
 
 <script>
-    const localUrl = 'http://localhost/BradRestApi/api/';
-    const herokuUrl = 'https://hidden-brushlands-71469.herokuapp.com/api/post/';
+    const localUrl = 'http://localhost/BradRestApi/api/speedTest/';
+    const herokuUrl = 'https://hidden-brushlands-71469.herokuapp.com/api/speedTest/';
+
+
+    async function generatetable() {
+        let resp = await fetch('http://localhost/BradRestApi/api/speedTest/generatetable.php');
+        let json = await resp.json();
+
+        console.log(json.data);
+
+
+        document.getElementById('resultsTable').innerText = json.data[0].download;
+
+        
+
+
+
+
+
+    }
+
 
 
 
 </script>
-</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    #textForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+</style>
 </html>
