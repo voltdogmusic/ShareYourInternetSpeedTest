@@ -4,5 +4,4 @@ vendor/
 myBlogDirectylFromBradsGitHub.sql
 myblogModdedToWork.sql
 SQLFiles/
-.idea\workspace.xml
-*.xml
+.idea/workspace.xml
