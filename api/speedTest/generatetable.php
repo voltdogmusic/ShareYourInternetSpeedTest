@@ -2,6 +2,9 @@
 
 header('Access-Control-Allow-Origin: *');
 header('Content-Type: application/json');
+header('Access-Control-Allow-Methods: POST');
+header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
+
 include_once '../../config/Database.php';
 
 //$database = new Database();
@@ -24,8 +27,29 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
+$contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';
+
+if ($contentType === "application/json") {
+
+    $content = trim(file_get_contents("php://input"));
+
+    $decoded = json_decode($content, true);
+
+    $postVariable = $decoded["postBody"];
+
+    //If json_decode failed, the JSON is invalid.
+    if(! is_array($decoded)) {
+
+    } else {
+        // Send error back to user.
+    }
+}
+
+// could use an array of flip values for each post variable, then if its false set the sql statement to the opposite (desc/asc)
+
+
 $sql =
-    "SELECT download, upload, ping, jitter, location, carrier FROM speedform";
+    "SELECT download, upload, ping, jitter, location, carrier FROM speedform ORDER BY $postVariable";
 
 $result = $conn->query($sql);
 
@@ -45,6 +69,7 @@ $result = $conn->query($sql);
 //    echo "</table>";
 //} else { echo "0 results"; }
 
+//echo $_POST['postBody'];
 
 if ($result->num_rows > 0){
 
@@ -55,6 +80,7 @@ if ($result->num_rows > 0){
         extract($row);
 
         // create a post item to add to the array
+
         $result_item = array(
             'download' => $download,
             'upload' => $upload,
@@ -64,6 +90,7 @@ if ($result->num_rows > 0){
             'carrier' => $carrier
         );
 
+        //echo $result_item;
 
         array_push($results_arr['data'], $result_item);
     }

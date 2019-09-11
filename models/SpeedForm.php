@@ -34,10 +34,13 @@ class SpeedForm
 
         $stmt = $this->conn->prepare($query);
 
+        // both methods turn blank values into 0.000's
+        // strip_tags removes HTMl and PHP tags from a string
+        // other option is to just require ping and jitter so no blank values allowed
         $this->download = htmlspecialchars(strip_tags($this->download));
         $this->upload = htmlspecialchars(strip_tags($this->upload));
-        $this->ping = htmlspecialchars(strip_tags($this->ping));
-        $this->jitter = htmlspecialchars(strip_tags($this->jitter));
+        //$this->ping = htmlspecialchars(strip_tags($this->ping));
+        //$this->jitter = htmlspecialchars(strip_tags($this->jitter));
         $this->location = htmlspecialchars(strip_tags($this->location));
         $this->carrier = htmlspecialchars(strip_tags($this->carrier));
 

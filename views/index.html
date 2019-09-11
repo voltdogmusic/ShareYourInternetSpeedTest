@@ -10,11 +10,19 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"/>
+<!--Particles.JS-->
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
+</script>
 <body>
-
-<h2 style="text-align:center;">Share and Compare your Internet Speed Test</h2>
-<h4 style="text-align:center;">Click the play button and enter your results to share your internet speed test</h4>
-
+<!--Heading + Separator + Globe-->
+<div class="seperator" id="titleSeperator">
+    <h3 style="text-align:center;">Share and Compare your Internet Speed Test</h3>
+    <h5 style="text-align:center;">Click the play button and enter your results to share your internet speed test</h5>
+</div>
+<!--Particle JS -->
+<div id="particles-js"></div>
+<div id="particles-js2"></div>
+<!--Speedtest iframe-->
 <!--https://openspeedtest.com/speed-testing-application-for-your-website.php-->
 <div style="text-align:center;">
     <div style="min-height:360px;">
@@ -34,57 +42,198 @@
         </div>
     </div>
 </div>
-
+<!--Speed form-->
 <form action="http://localhost/BradRestApi/api/speedTest/postspeedtestform.php"
       method="post"
-      id="textForm">
-    Download <input type="text" name="download" required>
-    <br>
-    Upload <input type="text" name="upload" required>
-    <br>
-    Ping <input type="text" name="ping">
-    <br>
-    Jitter <input type="text" name="jitter">
-    <br>
-    Location <input type="text" name="location" required>
-    <br>
-    Carrier <input type="text" name="carrier" required>
-    <br>
-    <input
-            type="submit"
-            value="Submit">
+>
+    <div class='flexform'>
+        <label for="download">Download</label>
+        <input type="text" id="download" name="download" required>
+        <br>
+        <label for="upload">Upload</label>
+        <input type="text" id="upload" name="upload" required>
+        <br>
+        <label for="ping">Ping</label>
+        <input type="text" id="ping" name="ping">
+        <br>
+        <label for="jitter">Jitter</label>
+        <input type="text" id="jitter" name="jitter">
+        <br>
+        <label for="location">Your Location</label>
+        <input type="text" id="location" name="location" required>
+        <br>
+        <label for="carrier">Carrier</label>
+        <input type="text" id="carrier" name="carrier" required>
+        <br>
+        <input
+                type="submit"
+                value="Submit"
+                class="btn btn-primary"
+        >
+
+    </div>
+
 </form>
+<!--Speed form results-->
+<div id="resultsTable" style="overflow-x:auto;"></div>
+<!--Refresh Table Button-->
+<div id="refreshtable">
+    <button onclick="generatetable()"
+            class="btn btn-secondary"
+    >Refresh Table
+    </button>
+</div>
+<!--Global Rankings-->
+<h3 style="text-align: center">Top Ten Download Speeds by Country (July 2019) </h3>
+<div id="globalTable">
 
-
-<button onclick="generatetable()">table</button>
-<h1 id="resultsTable">Results table here</h1>
-
-
+    <table style="width:50%">
+        <tr>
+            <th>Country</th>
+            <th>Download (Mbps)</th>
+        </tr>
+        <tr>
+            <td>Singapore</td>
+            <td>191.93</td>
+        </tr>
+        <tr>
+            <td>South Korea</td>
+            <td>156.18</td>
+        </tr>
+        <tr>
+            <td>Taiwan</td>
+            <td>151.75</td>
+        </tr>
+        <tr>
+            <td>Hong Kong</td>
+            <td>151.02</td>
+        </tr>
+        <tr>
+            <td>Romania</td>
+            <td>130.79</td>
+        </tr>
+        <tr>
+            <td>Monaco</td>
+            <td>125.69</td>
+        </tr>
+        <tr>
+            <td>Andorrra</td>
+            <td>115.88</td>
+        </tr>
+        <tr>
+            <td>United States</td>
+            <td>115.67</td>
+        </tr>
+        <tr>
+            <td>Switzerland</td>
+            <td>115.38</td>
+        </tr>
+        <tr>
+            <td>Macau</td>
+            <td>114.43</td>
+        </tr>
+    </table>
+</div>
 </body>
-
 <script>
+    particlesJS.load('particles-js', 'views/speedyDots.json', function () {
+        console.log('callback - particles.js config loaded');
+    });
+    particlesJS.load('particles-js2', 'views/speedyDots.json', function () {
+        console.log('callback - particles.js config loaded');
+    });
+
     const localUrl = 'http://localhost/BradRestApi/api/speedTest/';
     const herokuUrl = 'https://hidden-brushlands-71469.herokuapp.com/api/speedTest/';
 
+    let postBody = 'download';
 
-    async function generatetable() {
-        let resp = await fetch('http://localhost/BradRestApi/api/speedTest/generatetable.php');
-        let json = await resp.json();
+    // set body of post here
+    async function sortBy(switchOnThis) {
 
-        console.log(json.data);
+        switch (switchOnThis) {
+            case 'download':
+                postBody = 'download';
+                break;
+            case 'upload':
+                postBody = 'upload';
+                break;
+            case 'ping':
+                postBody = 'ping';
+                break;
+            case 'jitter':
+                postBody = 'jitter';
+                break;
+            case 'location':
+                postBody = 'location';
+                break;
+            case 'carrier':
+                postBody = 'carrier';
+                break;
+        }
 
-
-        document.getElementById('resultsTable').innerText = json.data[0].download;
-
-        
-
-
-
-
+        let resp = await generatetable();
 
     }
 
+    window.onload = async function () {
+        let resp = await generatetable();
 
+    };
+
+    async function generatetable() {
+
+        const config = {
+            method: 'POST',
+            mode: 'cors',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(
+                {
+                    postBody: postBody
+                })
+        };
+
+
+        let resp = await fetch('http://localhost/BradRestApi/api/speedTest/generatetable.php', config);
+        let json = await resp.json();
+
+        let heading = [
+            '<div class = "heading" onclick="sortBy(\'download\')"> Download (Mbps)</div>',
+            '<div class = "heading" onclick="sortBy(\'upload\')"> Upload (Mbps)</div>',
+            '<div class = "heading" onclick="sortBy(\'ping\')"> Ping (ms)</div>',
+            '<div class = "heading" onclick="sortBy(\'jitter\')"> Jitter (ms)</div>',
+            '<div class = "heading" onclick="sortBy(\'location\')"> Location</div>',
+            '<div class = "heading" onclick="sortBy(\'carrier\')"> Carrier</div>'];
+
+        var html = '<table>';
+
+        // Heading
+        html += '<tr>';
+
+        heading.forEach((j) => {
+
+            html += '<th>' + j + '</th>';
+
+        });
+
+        html += '</tr>';
+
+        // Actual Table data
+        for (var i = 0; i < json.data.length; i++) {
+            html += '<tr>';
+            for (var j in json.data[i]) {
+
+                html += '<td>' + json.data[i][j] + '</td>';
+            }
+            html += '</tr>';
+        }
+        html += '</table>';
+
+        document.getElementById('resultsTable').innerHTML = html;
+    }
 
 
 </script>
@@ -95,12 +244,85 @@
         box-sizing: border-box;
     }
 
-    #textForm {
+    .seperator {
+
+    }
+
+    #titleSeperator {
+        background: #31a8f0;
+        padding: 2%;
+    }
+
+    .flexform {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        padding-bottom: 1%;
     }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 4px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    .heading:hover {
+        color: cornflowerblue;
+        cursor: pointer;
+    }
+
+    #refreshtable {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #globalTable {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #particles-js {
+        position: absolute;
+        width: 40%;
+        height: 100%;
+    }
+
+    #particles-js2 {
+        position: absolute;
+        width: 40%;
+        height: 100%;
+        margin-left: 60%;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        #particles-js {
+            width: 20%;
+            height: 50%;
+        }
+
+        #particles-js2 {
+            width: 20%;
+            height: 50%;
+            margin-left: 30%;
+        }
+
+    }
+
 
 </style>
 </html>
