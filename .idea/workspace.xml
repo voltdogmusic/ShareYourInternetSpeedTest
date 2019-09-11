@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5f1c44bd-422b-4e04-a0b6-ad0290ee0895" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/speedTest/generatetable.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/speedTest/generatetable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/speedTest/postspeedtestform.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/speedTest/postspeedtestform.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/SpeedForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/SpeedForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +21,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="29" />
+            <state relative-caret-position="208">
+              <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#link#0;n#html#0;n#!!top" />
@@ -46,6 +43,15 @@
                 <element signature="e#2958#3610#0" />
                 <element signature="e#4232#5824#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -300,7 +306,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100561000" />
+    <option name="totallyTimeSpent" value="100894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -317,25 +323,47 @@
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="right" x="-3840" y="-538" width="2886" height="1054" id="Run" order="2" sideWeight="0.57879233" weight="0.8294243" />
       <window_info anchor="right" x="754" y="240" width="1032" height="711" id="Version Control" order="10" type="WINDOWED" weight="0.32853332" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49840087" weight="0.0088691795" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49840087" visible="true" weight="0.0088691795" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" x="-2403" y="-445" width="393" height="995" id="Project" order="4" sideWeight="0.5388027" visible="true" weight="0.16257995" />
+      <window_info active="true" content_ui="combo" x="-2403" y="-445" width="393" height="995" id="Project" order="4" sideWeight="0.5391499" visible="true" weight="0.16257995" />
       <window_info anchor="right" id="Database" order="3" show_stripe_button="false" />
-      <window_info id="Structure" order="5" sideWeight="0.46119735" side_tool="true" visible="true" weight="0.16257995" />
+      <window_info id="Structure" order="5" sideWeight="0.46085012" side_tool="true" visible="true" weight="0.16257995" />
       <window_info anchor="right" id="Ant Build" order="7" show_stripe_button="false" weight="0.2497332" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="bottom" x="172" y="68" width="1437" height="994" id="Debug" order="5" sideWeight="0.7017076" weight="0.5321508" />
       <window_info id="Favorites" order="6" sideWeight="0.5608592" side_tool="true" weight="0.4370331" />
-      <window_info anchor="right" x="2245" y="111" width="1101" height="909" id="Messages" order="11" type="WINDOWED" weight="0.13333334" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Coverage" order="13" side_tool="true" weight="0.3296" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50159913" side_tool="true" weight="0.24722838" />
+      <window_info active="true" content_ui="combo" x="-2403" y="-445" width="393" height="995" id="Project" order="4" sideWeight="0.5388027" visible="true" weight="0.16257995" />
+      <window_info id="Favorites" order="6" sideWeight="0.5608592" side_tool="true" weight="0.4370331" />
+      <window_info anchor="right" id="Coverage" order="13" side_tool="true" weight="0.3296" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49840087" weight="0.0088691795" />
+      <window_info id="Structure" order="5" sideWeight="0.46119735" side_tool="true" visible="true" weight="0.16257995" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Maven Projects" order="6" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
+      <window_info anchor="bottom" x="172" y="68" width="1437" height="994" id="Debug" order="5" sideWeight="0.7017076" weight="0.5321508" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info id="Image Layers" order="1" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="14" sideWeight="0.42120767" side_tool="true" visible="true" weight="0.18603411" />
+      <window_info anchor="right" id="Database" order="3" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" x="754" y="240" width="1032" height="711" id="Version Control" order="10" type="WINDOWED" weight="0.32853332" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="TODO" order="12" show_stripe_button="false" weight="0.32817504" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" show_stripe_button="false" weight="0.2497332" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32815966" />
+      <window_info anchor="right" x="-3840" y="-538" width="2886" height="1054" id="Run" order="2" sideWeight="0.57879233" weight="0.8294243" />
+      <window_info anchor="right" x="2245" y="111" width="1101" height="909" id="Messages" order="11" type="WINDOWED" weight="0.13333334" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
+      <window_info id="Designer" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,8 +554,8 @@
     <entry file="file://$PROJECT_DIR$/api/speedTest/getAllPosts.php" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        <state relative-caret-position="182">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -627,13 +655,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/speedTest/switchTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="14" column="141" selection-start-line="14" selection-start-column="141" selection-end-line="14" selection-end-column="141" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/api/speedTest/switchTest.php" />
     <entry file="file://$PROJECT_DIR$/api/speedTest/generatetable.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1274">
@@ -660,8 +682,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="208">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#link#0;n#html#0;n#!!top" />
