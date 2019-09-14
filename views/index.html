@@ -13,18 +13,22 @@
 <!--Particles.JS-->
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
 </script>
+<!--Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Electrolize|Orbitron&display=swap" rel="stylesheet">
 <body>
 <!--Heading + Separator + Globe-->
-<div class="seperator" id="titleSeperator">
-    <h3 style="text-align:center;">Share and Compare your Internet Speed Test</h3>
-    <h5 style="text-align:center;">Click the play button and enter your results to share your internet speed test</h5>
+<div id="titleSeperator">
+    <div id="titleSeperatorText" style="text-align:center; color: black;">Share and Compare your Internet Speed!
+    </div>
+    <img id="globeSvg" src="views/Asset10.svg">
 </div>
+<div style="text-align:center; padding-top: 2%; font-size: 1.5vw;">Click the Play Button and Enter Your Results</div>
 <!--Particle JS -->
 <div id="particles-js"></div>
 <div id="particles-js2"></div>
 <!--Speedtest iframe-->
 <!--https://openspeedtest.com/speed-testing-application-for-your-website.php-->
-<div style="text-align:center;">
+<div id="speedtestIframe" style="text-align:center;">
     <div style="min-height:360px;">
         <div style="width:100%;
                     height:0;
@@ -32,18 +36,18 @@
                     position:relative;">
             <iframe style="border:none;
                            position:absolute;
-                           top:0;left:0;
+                           top:0;
+                           left:0;
                            width:100%;
                            height:100%;
                            min-height:360px;
-                           border:none;
                            overflow:hidden !important;"
                     src="//openspeedtest.com/Get-widget.php"></iframe>
         </div>
     </div>
 </div>
 <!--Speed form-->
-<form action="http://localhost/BradRestApi/api/speedTest/postspeedtestform.php"
+<form action="https://shareyourinternetspeed.herokuapp.com/api/speedTest/postspeedtestform.php"
       method="post"
 >
     <div class='flexform'>
@@ -69,21 +73,22 @@
                 type="submit"
                 value="Submit"
                 class="btn btn-primary"
+                style="background-color: #0d9bff !important;"
         >
-
     </div>
 
 </form>
-<!--Speed form results-->
-<div id="resultsTable" style="overflow-x:auto;"></div>
+<!--Table of Speed Form Results-->
+<div id="resultsTable" style="overflow-x:auto; "></div>
 <!--Refresh Table Button-->
 <div id="refreshtable">
     <button onclick="generatetable()"
             class="btn btn-secondary"
+            style="background-color: #0d9bff !important;"
     >Refresh Table
     </button>
 </div>
-<!--Global Rankings-->
+<!--Table of Global Rankings-->
 <h3 style="text-align: center">Top Ten Download Speeds by Country (July 2019) </h3>
 <div id="globalTable">
 
@@ -134,6 +139,20 @@
         </tr>
     </table>
 </div>
+<!--SM Links-->
+<div class="smLinksContainerDiv">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <a href="https://www.facebook.com/voltdogmusic/" class="fa fa-facebook"></a>
+    <a href="https://twitter.com/VOLTDOGmusic" class="fa fa-twitter"></a>
+    <a href="https://www.linkedin.com/in/thomas-lee-609453181/" class="fa fa-linkedin"></a>
+    <a href="https://www.youtube.com/c/voltdogmusic/videos" class="fa fa-youtube"></a>
+    <a href="https://www.instagram.com/voltdogmusic/" class="fa fa-instagram"></a>
+    <a href="https://soundcloud.com/voltdogmusic" class="fa fa-soundcloud"></a>
+    <div>
+        <a class='email' href="mailto:tlee7222@gmail.com">Contact</a>
+    </div>
+</div>
 </body>
 <script>
     particlesJS.load('particles-js', 'views/speedyDots.json', function () {
@@ -144,7 +163,7 @@
     });
 
     const localUrl = 'http://localhost/BradRestApi/api/speedTest/';
-    const herokuUrl = 'https://hidden-brushlands-71469.herokuapp.com/api/speedTest/';
+    const herokuUrl = 'https://shareyourinternetspeed.herokuapp.com/api/speedTest/';
 
     let postBody = 'download';
 
@@ -196,8 +215,7 @@
                 })
         };
 
-
-        let resp = await fetch('http://localhost/BradRestApi/api/speedTest/generatetable.php', config);
+        let resp = await fetch(`${herokuUrl}generatetable.php`, config);
         let json = await resp.json();
 
         let heading = [
@@ -205,7 +223,7 @@
             '<div class = "heading" onclick="sortBy(\'upload\')"> Upload (Mbps)</div>',
             '<div class = "heading" onclick="sortBy(\'ping\')"> Ping (ms)</div>',
             '<div class = "heading" onclick="sortBy(\'jitter\')"> Jitter (ms)</div>',
-            '<div class = "heading" onclick="sortBy(\'location\')"> Location</div>',
+            '<div class = "heading" onclick="sortBy(\'location\')">Location</div>',
             '<div class = "heading" onclick="sortBy(\'carrier\')"> Carrier</div>'];
 
         var html = '<table>';
@@ -242,17 +260,77 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-weight: 700;
+        color: white;
+        font-family: 'Electrolize', sans-serif;
     }
 
-    .seperator {
+    body {
+        background-image: linear-gradient(to right, black, #434343 42%, black);
+    }
 
+    /*These queries are to place the gradient light source over the download text*/
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        body {
+            background-image: linear-gradient(to right, black, #434343 25%, black);
+        }
+    }
+
+    /*iphone 5/SE*/
+    @media only screen and (width: 320px) and (height: 568px) {
+        body {
+            background-image: linear-gradient(to right, black, #434343 50%, black);
+        }
+    }
+
+    /*ipad*/
+    @media only screen and (width: 768px) and (height: 1024px) {
+        body {
+            background-image: linear-gradient(to right, black, #434343 30%, black);
+        }
+    }
+
+    /*ipad pro */
+    @media only screen and (width: 1024px) and (height: 1366px) {
+        body {
+            background-image: linear-gradient(to right, black, #434343 35%, black);
+        }
+    }
+
+    input {
+        color: black;
     }
 
     #titleSeperator {
-        background: #31a8f0;
-        padding: 2%;
+        background-image: linear-gradient(45deg, black, #93a5cf, #e4efe9 42%, #93a5cf, black );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-shadow: 5px 5px 15px 5px #000000;
+        box-shadow: 5px 5px 15px 5px #000000;
+        max-height: 75px;
     }
 
+    #titleSeperatorText{
+        max-height: 85px;
+        font-size: 5vw;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    @media only screen and (min-width: 500px){
+        #titleSeperatorText{
+            font-size: 3vw;
+        }
+    }
+
+    #globeSvg{
+        max-height: 50px;
+        margin-left: 2rem;
+        transform: scale(2);
+    }
+
+    /*input form */
     .flexform {
         display: flex;
         flex-direction: column;
@@ -267,20 +345,25 @@
     }
 
     td, th {
-        border: 1px solid #dddddd;
         text-align: left;
         padding: 4px;
     }
 
     tr:nth-child(even) {
-        background-color: #dddddd;
+        background-color: #6b767e;
     }
 
+    tr:nth-child(even) {
+        color: black;
+    }
+
+    /*table heading */
     .heading:hover {
         color: cornflowerblue;
         cursor: pointer;
     }
 
+    /*button*/
     #refreshtable {
         padding-top: 1%;
         padding-bottom: 1%;
@@ -308,21 +391,33 @@
         margin-left: 60%;
     }
 
-    @media only screen and (max-width: 600px) {
-
-        #particles-js {
-            width: 20%;
-            height: 50%;
-        }
-
-        #particles-js2 {
-            width: 20%;
-            height: 50%;
-            margin-left: 30%;
-        }
-
+    /*SM Links and Contact email*/
+    .smLinksContainerDiv {
+        text-align: center;
     }
 
+    .fa {
+        color: #4c4c4c !important;
+        text-decoration: none !important;
+    }
+
+    /*Applies to ALL a's, be careful*/
+    a {
+        color: #4c4c4c !important;
+        text-decoration: none !important;
+        margin: .75rem;
+        transform: scale(1.5);
+    }
+    /*Applies to ALL a's, be careful*/
+    a:hover {
+        color: #93a5cf !important;
+    }
+
+    .email {
+        font-weight: bold;
+        font-size: x-large;
+    }
+    /* Above SM Links and Contact email*/
 
 </style>
 </html>
