@@ -35,12 +35,6 @@ if ($SpeedForm->jitter == NULL) {
 if ($SpeedForm->postForm()) {
     // create an array with a message key and Post Created value, then turn it into json and return it to the user
 
-//    echo $SpeedForm->download;
-//    echo "<br>";
-//    echo $SpeedForm->upload;
-//    echo "<br>";
-//    echo "$SpeedForm->ping";
-
     echo json_encode(
         array('message' => 'SpeedForm Posted')
     );

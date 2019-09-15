@@ -9,3 +9,4 @@ api/myUsers
 api/post
 models/Post.php
 models/User.php
+.env
