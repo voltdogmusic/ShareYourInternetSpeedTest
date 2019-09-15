@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f1c44bd-422b-4e04-a0b6-ad0290ee0895" name="Default" comment="" />
+    <list default="true" id="5f1c44bd-422b-4e04-a0b6-ad0290ee0895" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/acme.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/clearDb.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/clearDb.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="26">
-              <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+            <state relative-caret-position="-3819">
+              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#link#0;n#html#0;n#!!top" />
@@ -43,8 +48,29 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="286">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clearDb.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/clearDb.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <folding>
+                <element signature="e#8#449#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/Database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="9" column="46" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -95,7 +121,6 @@
         <option value="$PROJECT_DIR$/views/myview.html" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/config/clearDb.php" />
         <option value="$PROJECT_DIR$/views/test.js" />
         <option value="$PROJECT_DIR$/api/post/getsingleuser.php" />
         <option value="$PROJECT_DIR$/api/post/read.php" />
@@ -108,7 +133,6 @@
         <option value="$PROJECT_DIR$/api/myUsers/deleteuser.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/views/index.css" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/api/myPostCrud/getAllPosts.php" />
         <option value="$PROJECT_DIR$/SQLFiles/userstablecreation.sql" />
         <option value="$PROJECT_DIR$/views/home.php" />
@@ -119,6 +143,8 @@
         <option value="$PROJECT_DIR$/views/particles.json" />
         <option value="$PROJECT_DIR$/views/speedyDots.json" />
         <option value="$PROJECT_DIR$/views/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/config/clearDb.php" />
       </list>
     </option>
   </component>
@@ -156,7 +182,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="104" />
+    <option name="x" value="-248" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -184,7 +210,7 @@
             <path>
               <item name="BradRestApi" type="b2602c69:ProjectViewProjectNode" />
               <item name="BradRestApi" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -202,16 +228,16 @@
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\BradRestApi\SQLFiles" />
+      <recent name="C:\xampp\htdocs\BradRestApi\views" />
+      <recent name="C:\xampp\htdocs\BradRestApi\api\myUsers" />
+      <recent name="C:\xampp\htdocs\BradRestApi\api" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\BradRestApi\views" />
       <recent name="C:\xampp\htdocs\BradRestApi\SQLFiles" />
       <recent name="C:\xampp\htdocs\BradRestApi" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\BradRestApi\views" />
-      <recent name="C:\xampp\htdocs\BradRestApi\SQLFiles" />
-      <recent name="C:\xampp\htdocs\BradRestApi\api\myUsers" />
-      <recent name="C:\xampp\htdocs\BradRestApi\api" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -295,10 +321,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126968000" />
+    <option name="totallyTimeSpent" value="129813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="TODO" order="12" show_stripe_button="false" weight="0.32817504" />
@@ -311,12 +338,12 @@
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="right" x="754" y="240" width="1032" height="711" id="Version Control" order="10" type="WINDOWED" weight="0.32853332" />
       <window_info anchor="right" x="-3840" y="-538" width="2886" height="1054" id="Run" order="2" sideWeight="0.57879233" weight="0.8294243" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49840087" visible="true" weight="0.0088691795" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49840087" weight="0.0088691795" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" x="-2403" y="-445" width="393" height="995" id="Project" order="4" sideWeight="0.6655481" visible="true" weight="0.1641791" />
+      <window_info active="true" content_ui="combo" x="-2403" y="-445" width="393" height="995" id="Project" order="4" sideWeight="0.6651885" visible="true" weight="0.1641791" />
       <window_info anchor="right" id="Database" order="3" show_stripe_button="false" />
-      <window_info id="Structure" order="5" sideWeight="0.3344519" side_tool="true" visible="true" weight="0.1641791" />
+      <window_info id="Structure" order="5" sideWeight="0.33481154" side_tool="true" visible="true" weight="0.1641791" />
       <window_info anchor="right" id="Ant Build" order="7" show_stripe_button="false" weight="0.2497332" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
@@ -439,10 +466,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SHOW">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/acme.sql">
+    <entry file="file://$PROJECT_DIR$/SQLFiles/acme.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1040" />
       </provider>
@@ -497,13 +521,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/clearDb.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
@@ -562,13 +579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="46" />
         </state>
       </provider>
     </entry>
@@ -633,8 +643,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+        <state relative-caret-position="-3819">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#link#0;n#html#0;n#!!top" />
@@ -654,19 +664,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/speedyDots.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="16" column="25" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="25" />
           <folding>
             <element signature="n#!!block;n#interactivity#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SHOW">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/clearDb.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="e#8#449#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,6 +1,4 @@
 <?php
-
-
 /*
 
 This connected ok, but not actually sure going to check with connect method from Database.php
