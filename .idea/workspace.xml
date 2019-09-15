@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f1c44bd-422b-4e04-a0b6-ad0290ee0895" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/acme.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/clearDb.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/clearDb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/Database.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,13 +16,32 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <executablePath>composer</executablePath>
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="clearDb.php" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/config/clearDb.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="156">
+                    <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="30" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3819">
-              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state relative-caret-position="338">
+              <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
                 <element signature="n#link#0;n#html#0;n#!!top" />
@@ -49,28 +66,16 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clearDb.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/clearDb.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="e#8#449#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Database.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Database.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="9" column="46" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="46" />
+            <state relative-caret-position="520">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
             </state>
           </provider>
         </entry>
@@ -110,7 +115,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="ShareYourSpeedTest" />
       </map>
     </option>
   </component>
@@ -124,7 +129,6 @@
         <option value="$PROJECT_DIR$/views/test.js" />
         <option value="$PROJECT_DIR$/api/post/getsingleuser.php" />
         <option value="$PROJECT_DIR$/api/post/read.php" />
-        <option value="$PROJECT_DIR$/config/Database.php" />
         <option value="$PROJECT_DIR$/api/post/getallusers.php" />
         <option value="$PROJECT_DIR$/api/myUsers/getsingleuser.php" />
         <option value="$PROJECT_DIR$/api/myUsers/createuser.php" />
@@ -145,6 +149,7 @@
         <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config/clearDb.php" />
+        <option value="$PROJECT_DIR$/config/Database.php" />
       </list>
     </option>
   </component>
@@ -181,11 +186,11 @@
       <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-248" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="y" value="2" />
+    <option name="width" value="1932" />
+    <option name="height" value="1045" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -195,6 +200,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -216,9 +222,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,14 +322,15 @@
       <workItem from="1567707808975" duration="2860000" />
       <workItem from="1567983620157" duration="25396000" />
       <workItem from="1568495891499" duration="1771000" />
+      <workItem from="1568510840409" duration="1301000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129813000" />
+    <option name="totallyTimeSpent" value="131114000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="2" width="1932" height="1045" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="0" />
@@ -333,7 +339,7 @@
       <window_info id="Image Layers" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50159913" side_tool="true" weight="0.24722838" />
-      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="14" sideWeight="0.42120767" side_tool="true" visible="true" weight="0.18603411" />
+      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="14" sideWeight="0.42120767" side_tool="true" visible="true" weight="0.18643162" />
       <window_info anchor="right" id="Maven Projects" order="6" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="right" x="754" y="240" width="1032" height="711" id="Version Control" order="10" type="WINDOWED" weight="0.32853332" />
@@ -341,44 +347,22 @@
       <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49840087" weight="0.0088691795" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info active="true" content_ui="combo" x="-2403" y="-445" width="393" height="995" id="Project" order="4" sideWeight="0.6651885" visible="true" weight="0.1641791" />
+      <window_info content_ui="combo" x="-2403" y="-445" width="393" height="995" id="Project" order="4" sideWeight="0.664422" visible="true" weight="0.16613248" />
       <window_info anchor="right" id="Database" order="3" show_stripe_button="false" />
-      <window_info id="Structure" order="5" sideWeight="0.33481154" side_tool="true" visible="true" weight="0.1641791" />
+      <window_info id="Structure" order="5" sideWeight="0.335578" side_tool="true" visible="true" weight="0.16613248" />
       <window_info anchor="right" id="Ant Build" order="7" show_stripe_button="false" weight="0.2497332" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info id="Favorites" order="6" sideWeight="0.5608592" side_tool="true" weight="0.4370331" />
       <window_info anchor="bottom" x="172" y="68" width="1437" height="994" id="Debug" order="5" sideWeight="0.7017076" weight="0.5321508" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50159913" side_tool="true" weight="0.24722838" />
-      <window_info content_ui="combo" x="-2403" y="-445" width="393" height="995" id="Project" order="4" sideWeight="0.6655481" visible="true" weight="0.1641791" />
-      <window_info id="Favorites" order="6" sideWeight="0.5608592" side_tool="true" weight="0.4370331" />
-      <window_info anchor="right" id="Coverage" order="13" side_tool="true" weight="0.3296" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49840087" visible="true" weight="0.0088691795" />
-      <window_info active="true" id="Structure" order="5" sideWeight="0.3344519" side_tool="true" visible="true" weight="0.1641791" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Maven Projects" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" x="172" y="68" width="1437" height="994" id="Debug" order="5" sideWeight="0.7017076" weight="0.5321508" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-      <window_info id="Image Layers" order="1" />
-      <window_info anchor="right" x="0" y="0" width="434" height="856" id="Documentation" order="14" sideWeight="0.42120767" side_tool="true" visible="true" weight="0.18603411" />
-      <window_info anchor="right" id="Database" order="3" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info anchor="right" x="754" y="240" width="1032" height="711" id="Version Control" order="10" type="WINDOWED" weight="0.32853332" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="TODO" order="12" show_stripe_button="false" weight="0.32817504" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="7" show_stripe_button="false" weight="0.2497332" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32815966" />
-      <window_info anchor="right" x="-3840" y="-538" width="2886" height="1054" id="Run" order="2" sideWeight="0.57879233" weight="0.8294243" />
       <window_info anchor="right" x="2245" y="111" width="1101" height="909" id="Messages" order="11" type="WINDOWED" weight="0.13333334" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info id="Designer" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32815966" />
+      <window_info anchor="right" id="Coverage" order="13" side_tool="true" weight="0.3296" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,8 +627,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3819">
-          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+        <state relative-caret-position="338">
+          <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
             <element signature="n#link#0;n#html#0;n#!!top" />
@@ -680,24 +664,21 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="46" />
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/clearDb.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#8#449#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="156">
+          <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/Database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
