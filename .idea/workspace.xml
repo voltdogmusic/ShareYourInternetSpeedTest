@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="5f1c44bd-422b-4e04-a0b6-ad0290ee0895" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/speedTest/generatetable.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/speedTest/generatetable.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/clearDb.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,15 +19,15 @@
     <executablePath>composer</executablePath>
   </component>
   <component name="DockManager">
-    <window id="1">
+    <window id="2">
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="clearDb.php" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/config/clearDb.php">
+            <file leaf-file-name="Database.php" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/config/Database.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="156">
-                    <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="30" />
+                  <state relative-caret-position="52">
+                    <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
                   </state>
                 </provider>
               </entry>
@@ -40,7 +42,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
+            <state>
               <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" />
@@ -71,23 +73,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Database.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/Database.php">
+      <file leaf-file-name="postspeedtestform.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/speedTest/postspeedtestform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="390">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="speedyDots.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/speedyDots.json">
+      <file leaf-file-name="generatetable.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/speedTest/generatetable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="25" />
-              <folding>
-                <element signature="n#!!block;n#interactivity#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="572">
+              <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -143,13 +142,13 @@
         <option value="$PROJECT_DIR$/models/SpeedForm.php" />
         <option value="$PROJECT_DIR$/api/speedTest/postspeedtestform.php" />
         <option value="$PROJECT_DIR$/api/speedTest/switchTest.php" />
-        <option value="$PROJECT_DIR$/api/speedTest/generatetable.php" />
         <option value="$PROJECT_DIR$/views/particles.json" />
         <option value="$PROJECT_DIR$/views/speedyDots.json" />
         <option value="$PROJECT_DIR$/views/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/config/clearDb.php" />
         <option value="$PROJECT_DIR$/config/Database.php" />
+        <option value="$PROJECT_DIR$/config/clearDb.php" />
+        <option value="$PROJECT_DIR$/api/speedTest/generatetable.php" />
       </list>
     </option>
   </component>
@@ -212,6 +211,12 @@
               <item name="BradRestApi" type="b2602c69:ProjectViewProjectNode" />
               <item name="BradRestApi" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BradRestApi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BradRestApi" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="speedTest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BradRestApi" type="b2602c69:ProjectViewProjectNode" />
@@ -322,12 +327,12 @@
       <workItem from="1567707808975" duration="2860000" />
       <workItem from="1567983620157" duration="25396000" />
       <workItem from="1568495891499" duration="1771000" />
-      <workItem from="1568510840409" duration="1301000" />
+      <workItem from="1568510840409" duration="1915000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131114000" />
+    <option name="totallyTimeSpent" value="131728000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="2" width="1932" height="1045" extended-state="0" />
@@ -344,12 +349,12 @@
       <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
       <window_info anchor="right" x="754" y="240" width="1032" height="711" id="Version Control" order="10" type="WINDOWED" weight="0.32853332" />
       <window_info anchor="right" x="-3840" y="-538" width="2886" height="1054" id="Run" order="2" sideWeight="0.57879233" weight="0.8294243" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49840087" weight="0.0088691795" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49840087" visible="true" weight="0.007856341" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" x="-2403" y="-445" width="393" height="995" id="Project" order="4" sideWeight="0.664422" visible="true" weight="0.16613248" />
+      <window_info active="true" content_ui="combo" x="-2403" y="-445" width="393" height="995" id="Project" order="4" sideWeight="0.66402715" visible="true" weight="0.16613248" />
       <window_info anchor="right" id="Database" order="3" show_stripe_button="false" />
-      <window_info id="Structure" order="5" sideWeight="0.335578" side_tool="true" visible="true" weight="0.16613248" />
+      <window_info id="Structure" order="5" sideWeight="0.33597285" side_tool="true" visible="true" weight="0.16613248" />
       <window_info anchor="right" id="Ant Build" order="7" show_stripe_button="false" weight="0.2497332" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
@@ -601,21 +606,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/speedTest/postspeedtestform.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/speedTest/switchTest.php" />
-    <entry file="file://$PROJECT_DIR$/api/speedTest/generatetable.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="47" column="127" selection-start-line="47" selection-start-column="127" selection-end-line="47" selection-end-column="127" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/globe.png" />
     <entry file="file://$PROJECT_DIR$/views/globeArtboard.png" />
     <entry file="file://$PROJECT_DIR$/views/sweetParticlesTriangleForming.json">
@@ -627,7 +618,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
+        <state>
           <caret line="21" column="10" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" />
@@ -648,16 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/speedyDots.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="16" column="25" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!block;n#interactivity#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SHOW">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -668,6 +649,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/speedyDots.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!block;n#interactivity#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/clearDb.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -675,10 +666,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/speedTest/postspeedtestform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="52">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/speedTest/generatetable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
         </state>
       </provider>
     </entry>
