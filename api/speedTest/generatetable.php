@@ -6,26 +6,31 @@ header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,
 
 include_once '../../config/Database.php';
 
-//$database = new Database();
-//$db = $database->connect();
+
+
+//$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 //
-//if ($db->connect_error) {
-//    die("Connection failed: " . $db->connect_error);
+//$servername = $url["host"];
+//$username = $url["user"];
+//$password = $url["pass"];
+//$dbname = substr($url["path"], 1);
+//
+//// Create connection
+//$conn = new mysqli($servername, $username, $password, $dbname);
+//// Check connection
+//if ($conn->connect_error) {
+//    die("Connection failed: " . $conn->connect_error);
 //}
 
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-$servername = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$dbname = substr($url["path"], 1);
+$database = new Database();
+$conn = $database->connect();
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Connection failed: " . $db->connect_error);
 }
+
+
 
 // this code takes the body of the request, which is JSON, and makes it readable
 $contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';
